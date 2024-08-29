@@ -17,20 +17,6 @@ import { MeditacionOnline } from "./pages/subpages/MeditacionOnline.jsx";
 import Root from "./components/Root.jsx";
 
 function App() {
-  const [windowWidth, setWindowWidth] = useState(null);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
