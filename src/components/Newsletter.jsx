@@ -4,12 +4,12 @@ export function Newsletter() {
   const [email, setEmail] = useState("");
 
   function handleChange({ target }) {
-    setEmail((prev) => target.value);
+    setEmail(() => target.value);
   }
 
-  function handleSubmit(e) {
+  function handleSubmit() {
     // e.preventDefault();
-    setEmail((prev) => "");
+    setEmail(() => "");
   }
 
   return (

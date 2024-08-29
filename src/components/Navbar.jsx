@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import burgerIcon from "../assets/burger-menu.svg";
@@ -7,8 +8,9 @@ export function Navbar({ windowWidth }) {
   const [iconOpen, setIconOpen] = useState(true);
   const navMenu = useRef();
 
-  function handleClick(e) {
+  function handleClick() {
     setIconOpen(!iconOpen);
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     windowWidth < 750 && navMenu.current.classList.toggle("nav-bar-visible");
   }
 

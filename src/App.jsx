@@ -10,11 +10,11 @@ import { Clases } from "./pages/Clases.jsx";
 import { Nosotros } from "./pages/Nosotros.jsx";
 import { Talleres } from "./pages/Talleres.jsx";
 import { Sesiones } from "./pages/Sesiones.jsx";
-import { useState, useEffect } from "react";
 import { YogaOnline } from "./pages/subpages/YogaOnline.jsx";
 import { YogaPresencial } from "./pages/subpages/YogaPresencial.jsx";
 import { MeditacionOnline } from "./pages/subpages/MeditacionOnline.jsx";
 import Root from "./components/Root.jsx";
+import React from "react";
 
 function App() {
   const router = createBrowserRouter(
