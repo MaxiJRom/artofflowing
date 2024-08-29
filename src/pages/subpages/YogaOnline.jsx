@@ -1,7 +1,5 @@
 import React from "react";
 import yogaBanner from "../../assets/yoga-online.webp";
-import { ClassCard } from "../../components/ClassCard.jsx";
-import { clasesData } from "../../assets/cardsData";
 
 export function YogaOnline() {
   return (

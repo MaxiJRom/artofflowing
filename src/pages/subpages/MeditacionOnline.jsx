@@ -1,6 +1,5 @@
 import React from "react";
-import { ClassCard } from "../../components/ClassCard";
-import { clasesData } from "../../assets/cardsData";
+
 import meditacionBanner from "../../assets/grupo-de-meditacion.webp";
 
 export function MeditacionOnline() {

@@ -1,6 +1,5 @@
 import React from "react";
-import { clasesData } from "../../assets/cardsData";
-import { ClassCard } from "../../components/ClassCard.jsx";
+
 import yogaBanner from "../../assets/yoga-presencial.webp";
 
 export function YogaPresencial() {
