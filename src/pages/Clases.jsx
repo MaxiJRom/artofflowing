@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { ClassCard } from "../components/ClassCard.jsx";
 import heroBanner from "../assets/hero-banner.jpg";
 import { Hero } from "../components/Hero.jsx";
-import { clasesData } from "../assets/cardsData.js";
+import { CLASES } from "../assets/cardsData.js";
 import { Outlet } from "react-router";
 
 const description =
@@ -11,7 +12,7 @@ const description =
 export function Clases() {
   return (
     <>
-      {document.location.pathname === "/clases" ? (
+      {/* { ? (
         <Hero
           img={heroBanner}
           tittle="Nuestras clases"
@@ -19,16 +20,19 @@ export function Clases() {
         />
       ) : (
         <Outlet />
-      )}
+        )} */}
+
+      <Outlet />
+
       <div className="page-container">
         <section className="class-container">
-          {clasesData.map((clase) => (
+          {Object.keys(CLASES).map((clase) => (
             <ClassCard
-              tittle={clase.tittle}
-              description={clase.description}
-              img={clase.img}
-              urlPath={clase.urlPath}
-              key={clase.tittle}
+              tittle={CLASES[clase].tittle}
+              description={CLASES[clase].description}
+              img={CLASES[clase].img}
+              urlPath={CLASES[clase].urlPath}
+              key={CLASES[clase].tittle}
             />
           ))}
         </section>

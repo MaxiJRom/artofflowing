@@ -10,51 +10,151 @@ import libros from "./libros.webp";
 import energetico from "./energetico.webp";
 import chakras from "./chakras.webp";
 import ayurvedico from "./ayurvedico.webp";
+import yogaOnline from "./yoga-online.webp";
+import yogaBanner from "./yoga-presencial.webp";
+import meditacionBanner from "./grupo-de-meditacion.webp";
 
-const clasesData = [
-  {
-    tittle: "Yoga presencial",
-    img: retiroDeYoga,
-    description:
-      "Acompañarnos en el movimiento, sintiendo nuestro cuerpo, disfrutándonos, eso es Yoga. Descubre como el yoga puede cambiar tu cuerpo y tu vida.",
-    urlPath: "/clases/yogaPresencial",
-  },
-  {
+const CLASES = {
+  yogaOnline: {
     tittle: "Yoga online",
     img: yogaEnLinea,
     description:
       "Porque ya aprendimos que la distancia no es un impedimento. Movernos desde la consciencia es tarea número 1 en nuestros grupos online.",
     urlPath: "/clases/yogaOnline",
+    subpageImg: yogaOnline,
+    subpageImgAlt: "yoga-class",
+    subpageText: `Desde el día 1 hacemos hincapié en las posturas conscientes,escuchar a nuestro cuerpo, sentir nuestros limites y respetarlos con
+  amor sin juicio.
+  
+  Realizamos Hatha Yoga Online, un estilo de yoga suave, donde a través de cada postura y respiración nos entregamos al flujo del movimiento logrando equilibrio de mente, cuerpo y espíritu.
+  
+  Te invito a que formes parte de un grupo de personas igual que tú, principiante, con conocimientos básicos y muchas ganas de aprender a
+  soltar el control y conectar con su cuerpo, con su energía, con sus sueños.
+
+  **Elementos necesarios:**
+  - Mat o colchoneta 
+  - Ropa cómoda 
+  - Bloques de yoga o algo parecido
+  - Cinta de tela de alrededor 200cm (**)
+ 
+  ** No es primordial, podemos hablarlo y chequear que elementos tienes en casa que puedan reemplazarlo. Que nada te impida hacer lo que quieres ;)
+  
+  **Modalidad:**
+  - vía Zoom y YouTube.
+  
+  **Precio:**
+  - Una clase semanal de 1hs. €10 
+  - Cuatro clases semanales de 1hs. €30 
+
+  **Horario**
+  - Matutino 
+  - Vespertino 
+`,
   },
-  {
+
+  yogaPresencial: {
+    tittle: "Yoga Presencial",
+    img: retiroDeYoga,
+    description:
+      "Acompañarnos en el movimiento, sintiendo nuestro cuerpo, disfrutándonos, eso es Yoga. Descubre como el yoga puede cambiar tu cuerpo y tu vida.",
+    urlPath: "/clases/yogaPresencial",
+    subpageImg: yogaBanner,
+    subpageImgAlt: "yoga-class",
+    subpageText: `En las clases presenciales disfrutamos de la compañía de nosotrosmismos desde la consciencia, desde la respiración. Nos movemos desdela gratitud de darnos el permiso para disfrutar un momento paranosotros mismos. La presencialidad nos permite percibir el espacio que generamos al hacer yoga.
+
+Sin dejar de lado la técnica, la suavidad con la que realizamos las
+posturas, acompañando con la respiración, no regala lo que es la
+esencia del yoga: la unión de mente, cuerpo y espiritu.
+
+Realizamos Hatha Yoga Online, un estilo de yoga con movimientos
+suaves, centrado en la respiración y sosteniendo las posturas para
+poder conectar con nuestro cuerpo.
+
+Te invito a que formes parte de un grupo de personas igual que tú,
+principiante, con conocimientos básicos y muchas ganas de aprender a
+soltar el control y conectar con su cuerpo, con su energía, con el
+fluir de la vida.
+
+
+**Elementos necesarios:**
+- Mat de yoga o colchoneta
+- Ropa cómoda
+
+
+**Precio:**
+
+- Opción 1: Una clase semanal de 1hs. €10
+- Opción 2: Cuatro clases mensuales de 1hs. €30
+
+
+**Horario:**
+
+- Matutino
+- Vespertino 
+`,
+  },
+
+  meditacionOnline: {
     tittle: "Meditación Online",
     img: meditacionOnline,
     description:
       "Meditar nunca había sido tan fácil. La respiración y relajación son la meta y también nuestro camino. Alivia el insomnio con nuestras clases.",
     urlPath: "/clases/meditacionOnline",
+    subpageImg: meditacionBanner,
+    subpageImgAlt: "clases de meditacion",
+    subpageText: `Algunas personas dicen que la meditación es una técnica difícil de dominar. Yo digo que nada más lejos de la realidad! 
+
+Meditar es algo que tu puedes hacer para relajarte, dormir mejor, mejorar la digestión y miles de beneficios más y no es para nada difícil. 
+
+En el grupo de meditación usamos una técnica milenaria que es a prueba de error y te aseguro que verás los beneficios rápidamente, por que como todo, lo que necesitas son las ganas de querer hacerlo.{" "}
+
+
+Por eso te invito a que te unas al grupo de meditación, donde te encontrarás con personas como tú, que quieren mejorar su estilo de vida y saben que el cambio empieza desde adentro hacia afuera.
+
+**Elementos necesarios:**
+
+- Ropa cómoda
+
+**Modalidad:**
+
+- vía Zoom y YouTube
+
+
+**Precio:**
+
+- Una clase semanal de 1hs. €10
+- Cuatro clases semanales de 1hs. €30
+
+
+**Horario**
+
+- Vespertino
+
+    `,
   },
-  {
+
+  meditacionConCuencos: {
     tittle: "Meditación con cuencos",
     img: meditacionConCuencos,
     description:
       "Los cuencos tibetanos nos ayudan a liberar y desbloquear energías estancadas. Agenda tu sesión y ven a soltar en relajación",
     urlPath: "/clases/meditacionConCuencos",
   },
-  {
+  barrasDeAcces: {
     tittle: "Barras de Access®",
     img: barras,
     description:
       "MAGIA es lo que describe a la perfección esta clase ¿Estás lista para ser el cambio que buscas? Esta es la señal, reserva tu cupo!",
     urlPath: "/clases/barrasDeAcces",
   },
-  {
+  librosDeAcces: {
     tittle: "Intro de libros de Access®",
     img: libros,
     description:
       "La magia también viene en papel y se puede leer. Ven a disfrutar de las maravillosas páginas de Access Conciousness®",
-    urlPath: "#",
+    urlPath: "/clases/librosDeAcces",
   },
-];
+};
 
 const talleresData = [
   {
@@ -102,4 +202,4 @@ const sesionesData = [
   },
 ];
 
-export { clasesData, talleresData, sesionesData };
+export { talleresData, sesionesData, CLASES };
