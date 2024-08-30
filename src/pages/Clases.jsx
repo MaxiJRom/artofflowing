@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { ClassCard } from "../components/ClassCard.jsx";
-import heroBanner from "../assets/hero-banner.jpg";
-import { Hero } from "../components/Hero.jsx";
+// import heroBanner from "../assets/hero-banner.jpg";
+// import { Hero } from "../components/Hero.jsx";
 import { CLASES } from "../assets/cardsData.js";
 import { Outlet } from "react-router";
 
-const description =
-  "Aquí encontrarás todas las clases, cursos y talleres que ofreceremos en Art of Flowing. Siempre haciendo hincapié en seguir el flujo de la vida y disfrutarlo desde nuestro más aunténtico ser.";
+// const description =
+//   "Aquí encontrarás todas las clases, cursos y talleres que ofreceremos en Art of Flowing. Siempre haciendo hincapié en seguir el flujo de la vida y disfrutarlo desde nuestro más aunténtico ser.";
 
 export function Clases() {
   return (
