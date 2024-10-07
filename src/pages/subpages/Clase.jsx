@@ -6,7 +6,6 @@ import remarkGfm from "remark-gfm";
 
 export function Clase() {
   const { name } = useParams();
-  console.log(name);
 
   return (
     <>

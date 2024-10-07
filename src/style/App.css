@@ -43,7 +43,7 @@ li {
 body {
   overflow-x: hidden;
   min-height: 100dvh;
-  max-width: 1400px;
+  max-width: 1450px;
   margin: 0 auto;
   background-color: var(--color-creme-1);
 }
@@ -592,42 +592,47 @@ nav ul > li > a {
   }
 }
 
-/*========================*/
+/*=========================== Subpages     ======================*/
 .subpage-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: stretch;
   position: relative;
-  .subpage-banner {
-    max-width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    margin: 0 auto;
-  }
-  .subpage-text {
-    margin: 3rem auto;
-    padding-inline: 1rem;
-    h1 {
-      font-size: 2rem;
-      font-weight: 500;
-    }
-    p {
-      margin-block: 1rem;
+}
 
-      max-width: 70ch;
-      line-height: 1.5;
-      line-break: loose;
+.subpage-banner {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
+}
 
-      li {
-        list-style: inside;
-        margin-left: 1rem;
-      }
-    }
+.subpage-text {
+  margin: 3rem auto;
+  padding-inline: 1rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
   }
-  hr {
-    width: clamp(340px, 80%, 900px);
-    border-top: 1px solid var(--color-black-1);
-    margin: 0 auto;
+
+  p {
+    margin-block: 1rem;
+
+    max-width: 70ch;
+    line-height: 1.5;
+    line-break: loose;
   }
+
+  li {
+    list-style: inside;
+    margin-left: 1rem;
+  }
+}
+
+hr {
+  width: clamp(340px, 80%, 900px);
+  border-top: 1px solid var(--color-black-1);
+  margin: 0 auto;
 }
