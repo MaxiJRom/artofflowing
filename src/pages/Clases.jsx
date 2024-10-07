@@ -29,7 +29,7 @@ export function Clases() {
         link.removeEventListener("click", () => hiddeHero(false));
       });
     };
-  }, []);
+  });
 
   //quiero saber cual es la clase activa en cada momento, luego le paso la habilidad de cambiar a clase activa a las cards
   const [activeClass, setActiveClass] = useState(null);
