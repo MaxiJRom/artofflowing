@@ -11,7 +11,6 @@ const description =
 
 export function Clases() {
   const [heroIsVisible, setHeroIsVisible] = useState(true);
-  const $navLinks = document.querySelectorAll("header > nav > ul > li> a");
 
   //creo la capacidad de ocultar el hero y luego le paso esa capacidad a las cards
   function hiddeHero(bool) {
@@ -20,6 +19,7 @@ export function Clases() {
 
   //cuando se hace click en algun navLink, vuelve a estar visible el hero
   useEffect(() => {
+    const $navLinks = document.querySelectorAll("header > nav > ul > li> a");
     $navLinks.forEach((link) => {
       link.addEventListener("click", () => hiddeHero(false));
     });
