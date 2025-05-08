@@ -160,7 +160,7 @@ const talleresData = [
   {
     tittle: "Taller energético",
     img: energetico,
-    urlPath: "#",
+    urlPath: "/",
     description:
       "La solución siempre estuvo con nosotros, siempre estuvo dentro. La solución somos nosotros mismos",
   },
