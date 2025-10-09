@@ -92,7 +92,6 @@ header {
   background: url("../assets/butterfly.svg");
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: var(--color-creme-2); */
   max-width: 200px;
 
   display: table;
@@ -190,7 +189,7 @@ nav ul > li > a {
   position: relative;
 
   > * {
-    width: clamp(400px, 55vw, 700px);
+    width: clamp(370px, 55vw, 700px);
   }
 
   .hero-img {
